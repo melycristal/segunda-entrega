@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+/***********animaciones******/
+.servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+}
+
+.servicios .card {
+    background-color: rgb(243, 241, 241);
+    box-shadow: 2px 2px 2px rgba(0, 1, 0, 0.798);
+    border-radius: 15px;
+    margin: 10px;
+    width: 305px;
+    height: 400px;
+    border: 2px solid black;
+    overflow: hidden;
+    text-align: center;
+    transition: all 0.25s;
+}
+
+.servicios .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.736);
+}
+
+
+.servicios div img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px 15px 0 0;
+
+}
+
+.servicios div p {
+    text-align: center;
+    margin: 5px;
+    font-size: 20px;
+}
+
+
+
+
+
+/*body*/
+body {
+    width: 100%;
+    height: 100vh;
+}
+
+.border {
+    border: solid 1px black;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(243, 176, 187);
+    grid-area: cabeza;
+}
+
+.header img {
+    width: 120px;
+    height: 120px;
+    padding: 10px;
+}
+
+
+
+
+.header nav {
+    display: flex;
+
+}
+
+.header nav span {
+    margin: 10px;
+    padding: 10px;
+}
+
+.header nav span a {
+
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px black;
+    font-size: 20px;
+}
+
+
+
+
+/*****MAIN****/
+.main {
+    grid-area: cuerpo;
+}
+
+.container .main {
+    grid-column-start: 1;
+    grid-column-end: -1;
+}
+
+.hero {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(100vh - 150px);
+    background: url(banner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.623);
+}
+
+
+.titulo h1 {
+    font-size: 60px;
+}
+
+.texto {
+    text-align: center;
+    margin: 5px;
+}
+
+
+
+
+
+
+
+/******FOOTER*****/
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(19, 18, 18);
+    grid-area: pie;
+}
+
+.footer>img {
+    width: 150px;
+    height: 100;
+}
+
+.footer h4 {
+    color: white;
+
+}
+
+.footer ul {
+    list-style: none;
+
+}
+
+.footer ul li a {
+    text-decoration: none;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 2px 2px 2px palevioletred;
+}
+
+.footer div a img {
+    height: 50px;
+    width: 50px;
+}
+
+.container .footer {
+    grid-row: 4 / 5;
+}
+
+/***GRIDS AREA**/
+.container {
+    display: grid;
+    grid-auto-rows: 1fr;
+    grid-template-columns: 1.1fr 1.1fr;
+    grid-template-rows: 0.5fr auto 0.5fr;
+
+    grid-template-areas:
+        "cabeza cabeza"
+        "cuerpo cuerpo"
+        "pie pie";
+}
+
+/***********pagina contacto*******************/
+.PaginaContacto {
+    background-color: rgb(26, 22, 22);
+    color: white;
+    font-family: 'Charis SIL', serif;
+    font-family: 'Rubik', sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+    
+    
+}
+.ContenedorForm{
+    max-width: 1170px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.ContenedorForm h1{
+    text-align: center;
+    font-size: 3em;
+
+}
+.ContenedorWrap{
+    box-shadow: 0 0 20px 0 rgba(255, 255, 255, 0.932);
+}
+.ContenedorWrap > *{
+    padding: 1em;
+}
+
+
+.ContactoForm{
+    background-color: rgba(24, 23, 23, 0.911);
+}
+.ContactoForm form{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.ContactoForm form .block{
+    grid-column: 1 / 3;
+ }
+.ContactoForm form p{
+    margin: 0;
+    padding: 1em;
+}
+.ContactoForm form button,
+.ContactoForm form input,
+.ContactoForm form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: white;
+    border-bottom: 1px solid red;
+
+}
+.ContactoForm form button{
+    background-color: rgba(250, 20, 20, 0.856);
+    border: 0;
+    color: black;
+    text-transform: uppercase;
+    padding: 1em;
+}
+.ContactoForm form button:hover,
+.ContactoForm form button:focus{
+    background: rgb(247, 107, 42);
+    color: white;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+.abajo{
+    margin-top: auto;
+    width: 100%;
+    padding: 1em 0;
+}
+
+
+
+
+
+
+/***RESPONSIVE DESIGN****/
+
+
+
+@media screen and (max-width: 461px) {
+    .titulo h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-widht: 679px) {
+    .servicios {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+}
+
+
+
+
+@media screen and (max-width: 748px) {
+    .header {
+        flex-direction: column;
+        justify-content: center;
+        height: auto;
+    }
+
+    .header nav {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 749px) {
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .footer ul {
+        text-align: center;
+        margin: 15px 0 15px 0;
+
+    }
+}
